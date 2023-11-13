@@ -2,7 +2,7 @@ import java.util.Arrays;
 public class ServiceListEmployee {
     public static void increaseSalaryMonth(Employee[] employeesIncreaseSalary) {
         double increase;
-        double indexSalary = 0.1; // перменная отвечающаяя за размер индексации индексация
+        double indexSalary = 0.1;
         for (Employee employee : employeesIncreaseSalary) {
             if (employee != null) {
                 increase = employee.getSalaryEmployeeMonth() + (employee.getSalaryEmployeeMonth() * indexSalary);
@@ -11,7 +11,6 @@ public class ServiceListEmployee {
         }
         System.out.println(Arrays.toString(employeesIncreaseSalary));
     }
-
 
     public static String searchMinSalaryDepartment(Employee[] employeesMinSalaryDep, int numDepartment) {
         double minSalary = Integer.MAX_VALUE;
@@ -29,7 +28,6 @@ public class ServiceListEmployee {
         return namePerson;
     }
 
-
     public static String searchMaxSalaryDepartment(Employee[] employeesMaxSalaryDep, int numDepartment) {
         double maxSalary = Integer.MIN_VALUE;
         String namePerson=null;
@@ -44,7 +42,6 @@ public class ServiceListEmployee {
             }
         }
         return namePerson;
-
     }
 
     public static String searchAverageSalaryDepartment(Employee[] employeesAverageSalaryDep, int numDepartment) {
@@ -84,7 +81,7 @@ public class ServiceListEmployee {
     }
 
     public static void increaseSalaryDepartmentMonth(Employee[] employeesIncreaseSalaryDepartment,int numDepartment,double indexSalary) {
-        double index=indexSalary/100; // перменная отвечающаяя за размер индексации индексация
+        double index=indexSalary/100;
         double increase;
         for (Employee employee : employeesIncreaseSalaryDepartment) {
             if (employee == null) {
@@ -118,9 +115,7 @@ public class ServiceListEmployee {
             if (employee.getSalaryEmployeeMonth() < number) {
                 System.out.println(employee.getPersonalDepartment());
             }
-
         }
-
     }
 
     public static void searchMoreThatNumber(Employee[] searchMoreNumber, int number ) {
@@ -132,13 +127,7 @@ public class ServiceListEmployee {
             if (employee.getSalaryEmployeeMonth() > number) {
                 System.out.println(employee.getPersonalDepartment());
             }
-
         }
-
     }
-
 }
 
-
-
-// THE END

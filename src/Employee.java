@@ -1,15 +1,14 @@
 import java.util.Objects;
 
 public class Employee {
-    private final int id;                // id сотрудника
-    private final String firstNameEmployee;     //Имя
-    private final String middleNameEmployee;    //Отчевство
-    private final String lastNameEmployee;      //Фамилия
-    int department;                    // отдел
+    private final int id;
+    private final String firstNameEmployee;
+    private final String middleNameEmployee;
+    private final String lastNameEmployee;
+    int department;
 
-    private static int count = 1;          //переменная для счетчика
-
-    double salaryEmployeeMonth;         // зарплата сотрудника за месяц
+    private static int count = 1;
+    double salaryEmployeeMonth;
 
 
     public Employee(String lastNameEmployee, String firstNameEmployee, String middleNameEmployee, int department, double salaryEmployeeMonth) {
@@ -67,11 +66,4 @@ public class Employee {
         return id + " Сотрудник: " + lastNameEmployee + " " + firstNameEmployee + " " + middleNameEmployee
                 + " " + ", зарплата за месяц = " + salaryEmployeeMonth + " рублей";
     }
-
-
-
 }
-
-
-
-// THE END
