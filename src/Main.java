@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-@SuppressWarnings("ALL")
 public class Main {
     public static void main(String[] args) {
         Employee[] listEmployee=new Employee[10];
@@ -11,10 +10,6 @@ public class Main {
         listEmployee[1] =
                 new Employee("Айду", "Эдуард", "Альфред-Иоханесович",
                         1, 35_000);
-        //      listEmployee[0]  = null;
-
-        //      listEmployee[1]  = null;
-
         listEmployee[2] =
                 new Employee("Акопян", "Арсений", "Владимирович",
                         2, 41_000);
@@ -40,9 +35,6 @@ public class Main {
                 new Employee("Кановей", "Владимир", "Григорьевич",
                         5, 43_336);
 
-
-
-
         System.out.println(Arrays.toString(listEmployee));
         listEmployee[6].setDepartment(4);
         System.out.println(Arrays.toString(listEmployee));
@@ -55,10 +47,5 @@ public class Main {
         ServiceListEmployee.printAllPersonalDepartment(listEmployee,1);
         ServiceListEmployee.searchLessThatNumber(listEmployee,45_000);
         ServiceListEmployee.searchMoreThatNumber(listEmployee,50_000);
-
-
-
     }
 }
-
-// THE END
